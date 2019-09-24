@@ -6,6 +6,7 @@ node {
     }
 
     stage ('Render Configurations') {
+        sh 'ansible-playbook generate_configurations.yaml'
         // Generate configs with playbooks
     }
 
